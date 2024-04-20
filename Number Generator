@@ -1,0 +1,9 @@
+import random
+
+def lottery():
+    # returns 5 numbers between 1 and 100
+    for i in range(10):
+        yield random.randint(1, 100)
+
+for random_number in lottery():
+       print("And the next number is... %d!" %(random_number))
